@@ -1,22 +1,26 @@
-import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import React from 'react';
+import { View, Text, SafeAreaView, StyleSheet } from 'react-native';
 
-export default function App() {
+const App = () => {
   return (
-    <View style={styles.container}>
-      <Text>
-        Hey there, in case you would think this is not workinng... Open up
-        App.js to start working on your app!
-      </Text>
-    </View>
+    <SafeAreaView style={styles.safeArea}>
+      <View style={styles.container}>
+        <Text>Hey There</Text>
+      </View>
+    </SafeAreaView>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
+    backgroundColor: 'pink',
+    justifyContent: 'center',
+    alignItems: 'center',
     flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
+  },
+  safeArea: {
+    flex: 2,
   },
 });
+
+export default App;
