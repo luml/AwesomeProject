@@ -1,6 +1,6 @@
 import React, { useState, useCallback, useEffect } from 'react';
 import { FlatList, StyleSheet, Text } from 'react-native';
-import PalettePreview from './PalettePreview';
+import PalettePreview from '../components/PalettePreview';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 
 const Home = ({ navigation, route }) => {
